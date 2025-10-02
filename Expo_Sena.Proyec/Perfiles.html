@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de usuario</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="algo">
+        <button id="btn-volver-perfil" class="vuelta">
+            <img src="https://cdn-icons-png.flaticon.com/128/4495/4495698.png" class="olita" alt="Volver">
+        </button>
+    </div>
+    <div class="perfil-container">
+        <div class="perfil-card">
+            <h1>Perfil</h1>
+            <label for="inputImagen" class="label-foto-perfil">
+                <img class="usuario" id="imagenUsuario" src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Imagen de usuario">
+                <div class="texto-foto-perfil">Ingresa tu foto de perfil</div>
+            </label>
+            <input type="file" id="inputImagen" accept="image/*" style="display:none;">
+            <p id="nombreUsuario"><strong>Nombre:</strong></p>
+            <p id="emailUsuario"><strong>Email:</strong></p>
+            <p id="telefonoUsuario"><strong>Teléfono:</strong></p>
+            <p id="direccionUsuario"><strong>Dirección:</strong></p>
+            <button class="editar-perfil">Editar Perfil</button>
+            <button class="cerrar-sesion">Cerrar Sesión</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

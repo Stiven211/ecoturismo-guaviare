@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Guía Turístico</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header-guia">
+        <div class="arriba">
+            <div class="botones2">
+                <button id="btn-perfil" class="perfil2">Mi Perfil</button>
+            </div>
+            <div class="frase">
+                <div class="animacion-bienvenida">
+                    <h1>¡Bienvenido, Guía Turístico!</h1>
+                    <p>Gestiona tu perfil, muestra tus servicios y conecta con turistas interesados en descubrir el Guaviare.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="accesos-rapidos">
+            <button id="btn-tours-guia" class="tours acceso">Ver Tours</button>
+        </section>
+
+        <!-- Sección para que el guía agregue nuevos tours -->
+        <section class="agregar-tour">
+            <h2>Publicar nuevo tour</h2>
+            <form id="form-nuevo-tour" class="form-tour">
+                <input type="text" id="nombre-tour" class="input-contacto" placeholder="Nombre del tour" required>
+                <textarea id="descripcion-tour" class="input-contacto" placeholder="Descripción del tour" required></textarea>
+                <input type="number" id="precio-tour" class="input-contacto" placeholder="Precio por persona (COP)" min="0" required>
+                <input type="file" id="foto-tour" class="input-contacto" accept="image/*">
+                <button type="submit" class="btn-contacto">Publicar tour</button>
+            </form>
+            <div id="mensaje-tour" class="mensaje-tour"></div>
+        </section>
+
+        <!-- Sección de tours publicados por el guía -->
+        <section class="tours-publicados">
+            <h2>Tus tours publicados</h2>
+            <div id="lista-tours-publicados" class="lista-tours"></div>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

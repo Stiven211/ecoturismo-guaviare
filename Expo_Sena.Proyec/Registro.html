@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="algo">
+        <button id="btn-volver-registro" class="vuelta">
+            <img src="https://cdn-icons-png.flaticon.com/128/4495/4495698.png" class="olita" alt="Volver">
+        </button>
+    </div>
+    <main>
+        <section class="container">
+            <h1>Registro de Usuario / Guía Turístico</h1>
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                class="img_perfil" alt="Avatar genérico">
+            <p class="K">Regístrate para acceder a todas las funcionalidades del sitio. Si eres guía turístico, podrás
+                gestionar tu información y recibir reseñas de los visitantes.</p>
+
+            <form class="Registro">
+                <input class="input-contacto" type="text" placeholder="Nombre completo" required>
+                <input class="input-contacto" type="email" placeholder="Correo electrónico" required>
+                <input class="input-contacto" type="password" placeholder="Contraseña" required>
+                <input class="input-contacto" type="tel" placeholder="Número de teléfono" required>
+                <input class="input-contacto" type="text" placeholder="Dirección" required>
+                <select class="input-contacto" required>
+                    <option value="" disabled selected>Tipo de usuario</option>
+                    <option value="turista" id="turista">Turista</option>
+                    <option value="guia" id="guia">Guía Turístico</option>
+                </select>
+                <button id="btnCrear-cuenta" class="btn-contacto" type="submit">Crear cuenta</button>
+                <p><a href=""></a></p>
+            </form>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
